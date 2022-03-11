@@ -4,39 +4,35 @@ body {
   padding: 0;
   width:100vw;
   height: 100vh;
-  background-color: #eee;
+  /* background-color: #eee; */
 }
-/* .content { */
-/*   display: flex; */
-/*   justify-content: center; */
-/*   align-items: center; */
-/*   width:100%; */
-/*   height:100%; */
-/* } */
+
 .loader-wrapper {
   width: 100%;
   height: 100%;
   position: absolute;
   top: 0;
   left: 0;
-  background-color: #F527AE;
+  background-color: #4c566a;
   display:flex;
   justify-content: center;
   align-items: center;
 }
+
 .loader {
   display: inline-block;
   width: 50px;
   height: 50px;
   position: relative;
-  border: 6px solid #fff;
+  border: 6px solid #eceff4;
   animation: loader 2s infinite ease;
 }
+
 .loader-inner {
   vertical-align: top;
   display: inline-block;
   width: 100%;
-  background-color: #fff;
+  background-color: #eceff4;
   animation: loader-inner 2s infinite ease-in;
 }
 

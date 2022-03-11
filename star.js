@@ -1,4 +1,4 @@
-class Heart {
+class Star {
 
   constructor(img, x, y, offset, size) {
     this.img = img;
