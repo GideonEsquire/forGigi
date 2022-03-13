@@ -14,8 +14,8 @@ function preload() {
 }
 
 function setup() {
-  w = windowWidth; //perhaps this is what is causing the issue on iOS?
-  h = windowHeight; //perhaps this is what is causing the issue on iOS?
+  w = displayWidth; //perhaps this is what is causing the issue on iOS?
+  h = displayHeight; //perhaps this is what is causing the issue on iOS?
   music.play();
   createCanvas(w, h);
 
