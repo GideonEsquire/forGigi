@@ -20,9 +20,7 @@ function setup() {
 }
 
 function draw() {
-  background(250, 250, 250);
-  b = 10;
-  image(bg, b, b, windowWidth - b*2, windowHeight - b*2);
+  image(bg, 0, 0, displayWidth, displayHeight);
   for (i = 0; i < stars.length; i++) {
     stars[i].show();
     stars[i].jitter();
