@@ -3,6 +3,8 @@ var stars = [];
 var bg;
 var sound;
 var music;
+var w;
+var h;
 
 function preload() {
   star_img = loadImage('assets/star.png');
@@ -12,15 +14,17 @@ function preload() {
 }
 
 function setup() {
+  w = windowWidth; //perhaps this is what is causing the issue on iOS?
+  h = windowHeight; //perhaps this is what is causing the issue on iOS?
   music.play();
-  createCanvas(windowWidth, windowHeight);
+  createCanvas(w, h);
 
-  stars[0] = new Star(star_img, width * .33, height * .62, random(0, 100), 40);
-  stars[1] = new Star(star_img, width * .63, height * .62, random(0, 100), 40);
+  stars[0] = new Star(star_img, w * .33, h * .62, random(0, 100), 40);
+  stars[1] = new Star(star_img, w * .63, h * .62, random(0, 100), 40);
 }
 
 function draw() {
-  image(bg, 0, 0, displayWidth, displayHeight);
+  image(bg, 0, 0, w, h);
   for (i = 0; i < stars.length; i++) {
     stars[i].show();
     stars[i].jitter();
